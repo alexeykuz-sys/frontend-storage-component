@@ -1,3 +1,81 @@
-h1 {
-    color: firebrick;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body {
+    background-image: url(../images/bg-desktop.png);
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.box-wrapper {
+    
+    height:100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+
+.box-1 {
+    position: absolute;
+    width: 20rem;
+    height: 15rem;
+    top:50%;
+    left:20%;
+    background-color:hsl(228, 56%, 26%);
+    border-radius: 3% 40% 3% 3%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.logo {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    
+}
+
+.logo svg {
+    font-size: 4px;
+}
+
+.icon-wrapper {
+    
+    position: absolute;
+    width: auto;
+    display: flex;
+    top: 60%;
+    left: 10%;
+    justify-content: space-evenly;
+    margin-right: 30px;
+}
+
+.icon {
+    background-color: hsl(229, 57%, 11%);
+    padding: 7px;
+}
+
+.box-2 {
+    position: absolute;
+    width: 30rem;
+    height: 12rem;
+    top:50%;
+    left:50%;
+    background-color:hsl(228, 56%, 26%);
+    border-radius: 3% 40% 3% 3%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+    
 }
