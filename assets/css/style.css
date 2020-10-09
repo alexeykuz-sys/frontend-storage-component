@@ -42,4 +42,5 @@ html,body{
     grid-gap: 24px;
     justify-content: center;
     align-content: center;
+    color: red;
 }
