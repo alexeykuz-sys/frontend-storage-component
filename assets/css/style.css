@@ -44,3 +44,44 @@ html,body{
     align-content: center;
     color: red;
 }
+.box-1{
+    background: var(--dark-blue);
+    border-radius: 12px 100px 12px 12px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr) ;
+    grid-template-rows:1fr 1fr ; 
+    }
+
+
+.box-1 > div {
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+
+.logo {
+    padding-top: 20px;
+    align-self:center;
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding-top: 10px;
+}
+#buttons > div{
+    background: var(--very-dark-blue);
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+} 
+
+.box-2{
+    display: grid;
+    grid-template-columns:1fr 10fr 1fr ;
+    grid-template-rows:1fr 3.5fr;
+}
+    
