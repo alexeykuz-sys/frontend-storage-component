@@ -1,56 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-<link rel="stylesheet" href="assets/css/style.css ">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend Mentor Single Grid</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<title>Frontend Mentor | Fylo data storage component</title>
 </head>
 <body>
-<section>
-  <div class="box-wrapper">
-    <div class="box-1">
-        <div class="logo">
-          <img src="assets/images/logo.svg" alt="Fylo Logo">
-        </div>
-        <div id="buttons">
-          <div><input type="image"  alt="File Upload"
-           src="assets/images/icon-document.svg"></div>
-           <div><input type="image"  alt="Folder Upload"
-           src="assets/images/icon-folder.svg"></div>
-           <div><input type="image"  alt="Cloud Upload"
-           src="assets/images/icon-upload.svg"></div>
-        
-        </div>
-    </div>
-    <div class="box-2">
-      <div class="wrapper-2">
-        <div class="text">
-          <p>You've used <strong>815GB</strong> of your storage</p>
-        </div>
-        <div class="progress">
-          <div class="progress-bar w-81" role="progressbar" style="width: 81%" aria-valuenow="81" aria-valuemin="0 " aria-valuemax="1000 "></div>
-          
-        </div>
-        <div class="d-flex justify-content-between mt-2">
-          <div class="bold">0 GB</div>
-          <div class="bold">1000 GB</div>
-        </div>
-      </div>
-      <div class="popup">
-        <p class="popup-text"><strong>185</strong> GB left</p>
-      </div>
-    </div>
-    
-    
-    
-  </div>
+<div class = "container">
+<div class = "fylo-buttons">
+<div id= "logo" >
+<img src="assets/images/logo.svg" alt="Fylo Logo">
 </div>
-
-
-</section>
+<div id="buttons">
+<div><input type="image"  alt="File Upload"
+src="assets/images/icon-document.svg"></div>
+<div><input type="image"  alt="Folder Upload"
+src="assets/images/icon-folder.svg"></div>
+<div><input type="image"  alt="Cloud Upload"
+src="assets/images/icon-upload.svg"></div>
+</div>
+</div>
+<div class = "fylo-storage-progress-container">
+<div id="box1">
+<p id="quote"><small>1</small>8<span id="lst-num">5</span> <span id="gb-left">GB LEFT</span></p>
+</div>
+<div id="box2">
+<p>You’ve used <span class="bold">8<small>1</small><sub>5</sub> GB</span> of your storage</p>
+<div class="bar">
+<span class="progress"><span id="dot"></span></span>
+</div>
+<div class="bold" >
+<p>0 GB</p>
+<p>1000 GB</p>
+</div>
+</div>
+</div>
+</div>
+<!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Angel Morales</a>.
+  </div> -->
 </body>
 </html>
